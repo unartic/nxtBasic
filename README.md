@@ -4,3 +4,7 @@ nxtBasic is a compiler for BASIC source code for the Commander x16. It supports 
 
 ## What is nxtBasic for?
 With nxtBasic you can write familiar Basic code, and compile it to lightning fast machine code. This enables you to write more sophisticated programs as well as more compelling games.
+
+## About this documentation
+The documentation has been carfully written, but mistakes are possible. Some examples are borrowed from the officiel Commander x16 documentation.
+
