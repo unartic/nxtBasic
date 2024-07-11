@@ -8,3 +8,4 @@ With nxtBasic you can write familiar Basic code, and compile it to lightning fas
 ## About this documentation
 The documentation has been carfully written, but mistakes are possible. Some examples are borrowed from the officiel Commander x16 documentation.
 
+Go to the [Getting Started section](01.%20Getting%20started.md) do start using nxtBasic.
