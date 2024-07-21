@@ -31,9 +31,9 @@
     - PLAYZCM and PLAYZSM do not longer require a filehandle, that'll be automaticly arranged by nxtBasic
     - Changed the Modulus operator from % to MOD, because it was interfering with binary assignment: a=%00110110
 
-- [Download nxtBasic 0.3b for Windows](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-0.3b-win.zip)
-- [Download nxtBasic 0.3b for Linux](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-0.3b-linux.zip)
-- [Download nxtBasic 0.3b for MacOS](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-0.3b-mac.zip)
+- [Download nxtBasic 0.3b for Windows](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-v0.3b-win.zip)
+- [Download nxtBasic 0.3b for Linux](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-v0.3b-linux.zip)
+- [Download nxtBasic 0.3b for MacOS](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-v0.3b-mac.zip)
 
  
 ## Version 0.2b
