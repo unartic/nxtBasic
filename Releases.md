@@ -1,5 +1,35 @@
 # Releases
 
+## Version 0.4b
+
+**What's new:**
+
+- Bug fixes
+    - Fixed bug while playing multiple zcm-files in sequense
+    - Fixed bug with GETBMXHEIGHT and GETBMXWIDTH
+    - Fixed bug in custom keyboard handler
+    - Fixed bug in the internals of string storage in ram, causing string space to be filled rappidly
+    - Fixed bug reading from DATA blocks with negative integers
+    - Fixed bug: READ() was disabled due to build in constant READ (for OPENFILE). READ and WRITE are renamed to FOR_READ and FOR_WRITE
+    - Fixed bug in line draw routine, not restore vera to prev state correctly
+
+- New:
+    - CURROW() -> returns the current row the cursor is on
+    - CURCOL() -> returns the current column the cursor is on
+    - PushVar() -> push the contents of a variable to the variable stack
+    - PullVar() -> pulls a value from the stack and assigns it to a variable
+    - User defined functions: FUNCTION MyFunc() as String
+    - User defined sub routines: SUB MySub()
+    
+- New example programs:
+    - player.bas: file browser which plays zcm and zsm files and shows bmx images
+    - keyjoy.bas: demonstration of joystick and keyboard routines with multiple key presses simultaneously
+  
+- [Download nxtBasic 0.4b for Windows](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-v0.4b-win.zip)
+- [Download nxtBasic 0.4b for Linux](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-v0.4b-linux.zip)
+- [Download nxtBasic 0.4b for MacOS](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-v0.4b-mac.zip)
+
+  
 ## Version 0.3b
 
 **What's new:**

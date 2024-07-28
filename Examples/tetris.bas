@@ -145,7 +145,7 @@ ShowHighScore:
 
     cntHighScores=0
     if FileExists("SCORES.BIN") then
-        handle = OPENFILE("SCORES.BIN",READ)
+        handle = OPENFILE("SCORES.BIN",FOR_READ)
         for i = 1 to 10
             
             HighScore(i,1)=INPUT#(handle)
@@ -197,7 +197,7 @@ ClearKeyboardBuffer:
 return
 
 SaveHighScores:
-    handle = OPENFILE("@:SCORES.BIN",WRITE)
+    handle = OPENFILE("@:SCORES.BIN",FOR_WRITE)
     for i = 1 to 10
         if HighScore(i,1)="" then break
         PRINT# handle,HighScore(i,1)
