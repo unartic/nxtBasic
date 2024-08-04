@@ -1,9 +1,9 @@
 'TETRIS
 CONST keyLeft = 157
-CONST keyRight = 29
+CONST keyRight = 29     
 CONST keyUp = 145
 
-CONST KeyCodeLeft = $4F
+CONST KeyCodeLeft = $4f
 CONST KeyCodeRight = $59
 CONST KeyCodeDown = $54
 CONST KeyCodeUp = $53
@@ -156,7 +156,9 @@ ShowHighScore:
         next i
         CLOSE handle
     end if
-
+    x = rtrim$
+    
+    
     if cntHighScores>0 then
         SETCOL 20
         PRINT "HIGHSCORES: " 
@@ -190,6 +192,8 @@ PrintWindow:
     next i     
     locate 6,20
 return
+
+
 
 ClearKeyboardBuffer:
     key$=GET
@@ -473,10 +477,11 @@ DrawScreen:
         row=row+1
     next
     locate row,OffsetX
-    
+    x = True
     PRINT "  " + RPT$(" ",Width) + "  "
     color 1,0
     locate 1,23
     PRINT "TETRIS CLONE COMPILED WITH NXTBASIC"
 return
+
 

@@ -1,5 +1,43 @@
 # Releases
 
+## Version 0.5b
+
+**What's new:**
+
+- Bug fixes
+    - Fixed bug while checking length of string concatanation
+    - Fixed bug when multiple lines seperated by a semicolon where places behind the THEN statement
+    - Fixed bug in BLOAD function
+    - Fixed bug in function/sub definition where there was as space in front of an argument.
+    - Fixed bug in BANK and COLOR statement when not supplying the optional argument
+
+- New:
+    - Added [CHAIN](15.%20Miscellaneous%20.md#chain) -> resume executing into another PRG-file.
+    - Added "EXIT SUB" and "EXIT FUNCTION"
+    - Added [documentation](16.%20Extending%20nxtBasic.md) on how to extend nxtBasic with your own assembly routines
+    - Added DO/LOOP/EXIT LOOP
+    - Added "OPTION EXPLICIT" to force declaration of variables
+    - Added DIRITEMDATE(), DIRITEMTIME() and DIRITEMSIZE() to retrieve all file information
+    - Added [internal constants](17.%20Internal%20constants.md) for 16 bit registers (r0,r1 etc) and vera-registers
+
+- Improved:
+    - Moved WorkBuffer and stacktable to end of low mem space
+    - VERA FX multiplication output moved to non-visible piece of vram
+    - ADDSPRITE can now also be called with an address instead of a filename to configure a sprite which is already in vram
+    - ADDSPRITE returns the vram address a sprite is loaded into GETA(), GETX() and GETY()
+    - Added ",FORCE" at the #INCLUDE directive to force an include, even if the file has been included before.
+    - If BINPUT# is used to load less then 256 bytes, MACPTR is used to speed up the reading
+    - Syntax checking for CONST definitions on compile time.
+    - nxtBasic resets several internal memorylocation on run so running a prg several times should not cause an issue
+    - Several performance improvements regarding sprite functions
+    - 25% performance improvement on FOR-NEXT loops when there is no STEP defined.
+
+
+- [Download nxtBasic 0.5b for Windows](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-v0.5b-win.zip)
+- [Download nxtBasic 0.5b for Linux](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-v0.5b-linux.zip)
+- [Download nxtBasic 0.5b for MacOS](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-v0.5b-mac.zip)
+
+
 ## Version 0.4b
 
 **What's new:**
