@@ -1,5 +1,5 @@
 'Program to showcase the directory listing features, zsm and zcm playing functions and bmx drawing function of nxtBasic.
-'Compile with nxtBasic
+'Compile with nxtBasic: https://github.com/unartic/nxtBasic
 
 CONST COL_WIDTH=25  'width of columns with directory items
 CONST rowCount=20   'rows to display on screen

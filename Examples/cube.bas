@@ -2,6 +2,7 @@
 'The cube on the left is drawn, erased and drawn etc, causing a flicker, the cube
 'on the bottom right is a bitmap copy of the drawn cube
 'Developed by Unartic, july 2024
+'Compile with nxtBasic: https://github.com/unartic/nxtBasic
 
 SCREEN 128
 

@@ -1,4 +1,6 @@
 'Paint-like program witten in nxtBasic which handles BMX files.
+'Compile with nxtBasic: https://github.com/unartic/nxtBasic
+
 'Use:
 '- right mouse button to change color
 '- S to save

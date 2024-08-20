@@ -1,5 +1,6 @@
 'A port of Tony's mystify program for CBM Basic. 
 'Ported by Unartic, july 2024
+'Compile with nxtBasic: https://github.com/unartic/nxtBasic
 
 10 SCREEN 1:COLOR 5,0:CLS:PRINT:PRINT
 20 PRINT "  NUMBER OF BOX SHAPES TO DISPLAY  (1 TO 6):";

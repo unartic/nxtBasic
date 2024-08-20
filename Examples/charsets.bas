@@ -1,5 +1,6 @@
 'A quick program for nxtBasic in whicn you can iterate through all x16 character sets
 'Developed by Unartic, july 2024
+'Compile with nxtBasic: https://github.com/unartic/nxtBasic
 
 cntCharSets=11
 Dim CharSets(cntCharSets) as string

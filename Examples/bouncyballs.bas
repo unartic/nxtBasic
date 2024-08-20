@@ -1,5 +1,6 @@
 'Demonstration of 25 sprites moving rapidly along the screen 
 'Developed by Unartic, july 2024
+'Compile with nxtBasic: https://github.com/unartic/nxtBasic
 
 SCREEN 128
 noSprites = 25          'number of sprites to display

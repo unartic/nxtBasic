@@ -1,3 +1,5 @@
+'Compile with nxtBasic: https://github.com/unartic/nxtBasic
+
 ENTERISO
 
 Dim KeyCodes(128) as string

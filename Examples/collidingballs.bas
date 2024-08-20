@@ -1,6 +1,7 @@
 'Demonstration of 3 sprites, where if they are colliding the animation speed is dropped
 'and which sprites are colliding is displayed. 
 'Developed by Unartic, july 2024
+'Compile with nxtBasic: https://github.com/unartic/nxtBasic
 
 SCREEN 128
 

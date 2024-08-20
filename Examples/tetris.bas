@@ -1,4 +1,7 @@
 'TETRIS
+'Compile with nxtBasic: https://github.com/unartic/nxtBasic
+
+
 CONST keyLeft = 157
 CONST keyRight = 29     
 CONST keyUp = 145
@@ -156,7 +159,7 @@ ShowHighScore:
         next i
         CLOSE handle
     end if
-    x = rtrim$
+
     
     
     if cntHighScores>0 then

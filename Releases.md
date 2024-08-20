@@ -1,5 +1,38 @@
 # Releases
 
+## Version 0.6b
+
+**What's new:**
+
+
+
+- Bug fixes
+    - Fixed bug in ASC function
+    - Fixed bug in left$
+    - Fixed bug with loading basic constants
+    - Fixed bug with incorrect compile time errors when two return types are possible
+    - Fixed bug when returning a value in a function with using EXIT FUNCTION
+
+- New:
+    - Added [HLT](07.%20Control%20flow%20statements.md#hlt) to stop execution of code. Handy for debugging
+    - Added [REPLACE](10.%20String%20handling.md#replace) to replace a portion of a string
+    - Added [SPLITITEM](10.%20String%20handling.md#splititem): a 'split in place' function
+    - Added [Tally()](10.%20String%20handling.md#tally): counts occurences of a char in a string
+    - Added [INSTRREV()](10.%20String%20handling.md#instrrev): same as INSTR but then check from right to left
+
+
+- Improved:
+    - Performance improvement of about 50% on PSET
+    - Compile time error checking on using the '+' operator on a mix between string and number
+    - Implemented new way to load string and float literals, reducing prg size
+
+
+- [Download nxtBasic 0.6b for Windows](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-v0.6b-win.zip)
+- [Download nxtBasic 0.6b for Linux](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-v0.6b-linux.zip)
+- [Download nxtBasic 0.6b for MacOS](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-v0.6b-mac.zip)
+
+  
+
 ## Version 0.5b
 
 **What's new:**

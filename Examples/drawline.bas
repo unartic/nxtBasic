@@ -1,5 +1,6 @@
 'Demonstration of the line draw function in nxtBasic, using the VERA FX Line draw helper. 
 'Developed by Unartic, july 2024
+'Compile with nxtBasic: https://github.com/unartic/nxtBasic
 
 CLS
 locate 25,28
