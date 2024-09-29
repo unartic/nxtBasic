@@ -2,7 +2,7 @@
 'Developed by Unartic, july 2024
 'Compile with nxtBasic: https://github.com/unartic/nxtBasic
 
-cntCharSets=11
+cntCharSets=12
 Dim CharSets(cntCharSets) as string
 CharSets(1)="iso"
 CharSets(2)="PET UPPER/GRAPH"
@@ -15,7 +15,7 @@ CharSets(8)="cyrillic iso"
 CharSets(9)="cyrillic iso (thin) "
 CharSets(10)="eastern latin iso"
 CharSets(11)="eastern iso (thin) "
-
+CharSets(12)="katakana (thin) "
 
 SCREEN 1
 COLOR 5,0
@@ -24,24 +24,6 @@ locate 10,15
 PRINT "USE LEFT AND RIGHT ARROW TO ITERATE THROUGH CHARSETS"
 SLEEP 180
 CLS
-'Draw visible characters
-row=1
-col=5
-
-
-For i = 32 to 255
-    if i<$80 or i>$9F then
-        locate row,col
-        
-        print str$(i) + ": " + chr$(i)
-        row=row+1
-        if row>28 then
-            row=1
-            col=col+10
-        end if
-    end if
-next
-col=5
 
 curCharSet=1
 GOSUB ChangeCharSet
@@ -66,7 +48,32 @@ Loop:
 GOTO Loop
 
 ChangeCharSet:
+    if curCharSet>=2 and curCharSet<=5 then
+        EXITISO 
+    else
+        ENTERISO
+    end if
     SETCHARSET curCharSet
     locate 0,5
     PRINT STR$(curCharSet) + ": " + CharSets(curCharSet) + "                   "
+    Gosub PrintCharSet
+return
+
+PrintCharSet:
+    row=1
+    col=5
+
+    For i = 32 to 255
+        if i<$80 or i>$9F then
+            locate row,col
+            
+            print str$(i) + ": " + chr$(i)
+            row=row+1
+            if row>28 then
+                row=1
+                col=col+10
+            end if
+        end if
+    next
+    col=5
 return

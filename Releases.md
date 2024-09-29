@@ -1,5 +1,32 @@
 # Releases
 
+## Version 1.0
+
+**What's new:**
+
+- Bug fixes
+    - LCASE/UCASE now also change the case of extended chars in an ISO charset
+    - Automatic run command wasn't working correctly without the -startin x16emu param. 
+
+- New:
+    - OVAL-function to draw circles and ovals.
+
+- Improved:
+    - All sprite function have a performance improvement of up to 10%
+    - 9% performance increase in handling integer arrays with one dimension
+    - 23% performance increase with FOR-NEXT loops
+    - 20% performance increase in retrieving an integer variable
+    - Example charsets.bas is now showing ISO charsets correctly and Katakana charset is added
+    
+- New example programs:
+    - starfield.bas -> moving starfield: sprite movement demonstration
+    - spiro.bas -> create a spirograph based on user input
+
+- [Download nxtBasic 1.0 for Windows](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-v1.0-win.zip)
+- [Download nxtBasic 1.0 for Linux](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-v1.0-linux.zip)
+- [Download nxtBasic 1.0 for MacOS](https://github.com/unartic/nxtBasic/raw/main/Download/nxtBasic-v1.0-mac.zip)
+
+
 ## Version 0.6b
 
 **What's new:**
